@@ -8,6 +8,8 @@ Keygen: Generates the RSA public and private key pairs
 Encrypt: Encrypts files using the generated public key
 Decrypt: Decrypts files using the generated private  key
 
+Generates RSA private and public key pairs with Keygen.c, encrypts files using the public key with Encrypt.c, and decrypts files using the private key with Decrypt.c. We will also implement two libraries, RSA and Numtheory. Numtheory will contain five mathematical functions so I can implement the random state interface of the RSA library. After creating Numtheory, I created the RSA library, which contains twelve functions that generate keys, encrypt and decrypt files, signs messages, verifies signatures, etc. Encrypt.c parses through various commands and allows for users to input files to encrypt and define a file to output the encryption in. The various RSA library functions I implemented does this encryption. Decrypt.c acts in a similar manner, but deals with decryption. Randstate.c generates pseudorandom numbers with the Mersenne Twister. This is used used in my numtheory functions.
+
 ## Build
 
     $ make
