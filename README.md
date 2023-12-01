@@ -1,4 +1,4 @@
-# Assignment 5
+# RSA Algorithm
 
 Generates RSA public + private key pairs and using the keys to encrypt and decrypt messages with the RSA algorithm.
 
